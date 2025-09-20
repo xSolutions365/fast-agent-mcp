@@ -20,12 +20,19 @@
 
 ## 🔑 Configuration
 
-1. Add your API keys
-	- Edit `fastagent.secrets.yaml` or set environment variables.
-	- Verify:
-	  ```sh
-	  fast-agent check
-	  ```
+1. **Add your API keys**
+
+   Export your `OPENAI_API_KEY` in the console:
+
+   ```sh
+   export OPENAI_API_KEY=your-key-here
+   ```
+
+   Verify your setup:
+
+   ```sh
+   fast-agent check
+   ```
 2. Keep your secrets safe
 	- Never commit `fastagent.secrets.yaml` to version control.
 3. Configure your agent
