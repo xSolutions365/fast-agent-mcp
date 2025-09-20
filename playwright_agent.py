@@ -1,4 +1,5 @@
 from mcp_agent.core.fastagent import FastAgent
+from pathlib import Path
 import asyncio
 
 fast = FastAgent("Playwright MCP PoC")
@@ -8,14 +9,13 @@ fast = FastAgent("Playwright MCP PoC")
     servers=["playwright"],
 )
 
-async def test_webapp(usecases: str):
+async def test_webapp(usecases: Path):
     async with fast.run() as agent:
-        result = await agent.send(f"Test this web application: {usecases}")
+        result = await agent.send(f"Test bdd use cases: {usecases}")
         return result
 
 async def main():
-    usecases = "Go to wood mackenzie web app. Find report and add the report to the cart."
-    result = await test_webapp(usecases)
+    result = await test_webapp(Path("./prompts/bdd_woodmackenzie_prompt.md").read_text())
     print("Test Result:", result)
 
 if __name__ == "__main__":
