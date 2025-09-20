@@ -1,22 +1,19 @@
 # 🚀 fast-agent-mcp
 
-> A blazing-fast, configurable agent framework for Python.
+> A blazing-fast, configurable agent framework for Python using 
 
 ---
 
 ## 🛠️ Quick Start
 
-1. Install [uv](https://github.com/astral-sh/uv) (Python package manager):
+1. The project assumes you are using uv for managing Python packages.Install [uv](https://github.com/astral-sh/uv) (Python package manager):
+
 	```sh
-	pip install uv
+	curl -Ls https://astral.sh/uv/install.sh
 	```
 2. Install fast-agent-mcp:
 	```sh
-	uv pip install fast-agent-mcp
-	```
-3. Set up your first agent:
-	```sh
-	fast-agent setup
+	uv run
 	```
 
 ---
@@ -32,7 +29,7 @@
 2. Keep your secrets safe
 	- Never commit `fastagent.secrets.yaml` to version control.
 3. Configure your agent
-	- Edit `fastagent.config.yaml` to set your default model (default: `haiku`).
+	- Edit `fastagent.config.yaml` to set your default model (default: `gpt-4.1`).
 
 ---
 
@@ -48,4 +45,8 @@
 
 ---
 
-Enjoy building with fast-agent-mcp! ⚡️
+## ▶️ Run your agent
+
+```sh
+uv run playwright_agent.py
+```

@@ -4,7 +4,7 @@ import asyncio
 fast = FastAgent("Playwright MCP PoC")
 
 @fast.agent(
-    instruction="You are a web automation testing agent. Use Playwright MCP server to interact with web pages to perform testing tasks.",
+    instruction="You are a web automation testing agent. Use Playwright MCP server to interact with web pages to perform testing tasks. Testing tasks are provided using BDD/Gherkin format",
     servers=["playwright"],
 )
 
