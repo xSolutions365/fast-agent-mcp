@@ -11,10 +11,6 @@
 	```sh
 	curl -Ls https://astral.sh/uv/install.sh
 	```
-2. Install fast-agent-mcp:
-	```sh
-	uv run
-	```
 
 ---
 

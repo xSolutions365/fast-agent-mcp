@@ -38,3 +38,4 @@ mcp:
            - '@playwright/mcp@latest'
            - '--output-dir=./artifacts'
            - '--headless'
+           - '--viewport-size=1280, 720'
