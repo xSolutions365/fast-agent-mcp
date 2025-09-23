@@ -5,7 +5,7 @@ import asyncio
 fast = FastAgent("Playwright MCP PoC")
 
 @fast.agent(
-    instruction="You are a web automation testing agent. Use Playwright MCP server to interact with web app. Testing tasks are provided using BDD/Gherkin format. Test results should be in markdown format and saved as {filename}.md in the ./artifact directory. Always take screenshot at the end of each scenario. Screenshot should be saved as {filename}.png and stored in ./artifact directory",
+    instruction="You are a web automation testing agent. Use Playwright MCP server to interact with web app. Testing tasks are provided using BDD/Gherkin format. Test results should be in markdown format and saved as {filename}.md in the ./artifacts directory. Always take screenshot at the end of each scenario. Screenshot should be saved as {filename}.png and stored in ./artifacts directory",
     servers=["playwright"],
 )
 
@@ -19,6 +19,7 @@ async def main():
     # print("Test Result:", result)
 
     prompt_dir = Path("./prompts")
+
 
     results = []
     for file in prompt_dir.glob("*.md"):
