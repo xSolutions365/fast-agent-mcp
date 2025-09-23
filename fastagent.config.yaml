@@ -37,3 +37,4 @@ mcp:
          args:
            - '@playwright/mcp@latest'
            - '--output-dir=./.artifacts'
+           - '--headless'
