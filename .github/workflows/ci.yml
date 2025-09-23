@@ -21,9 +21,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v6
 
-      - name: Install packages
-        run: uv run
-        
       - name: Run Playwright Agentic Tests
         run: uv run playwright_agent.py
         env:
