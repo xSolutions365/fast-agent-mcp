@@ -36,5 +36,5 @@ mcp:
          command: npx
          args:
            - '@playwright/mcp@latest'
-           - '--output-dir=./.artifacts'
+           - '--output-dir=./artifacts'
            - '--headless'
