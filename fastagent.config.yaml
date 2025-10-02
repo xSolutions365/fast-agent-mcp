@@ -39,3 +39,4 @@ mcp:
            - '--output-dir=./artifacts'
            - '--headless'
            - '--viewport-size=1280, 720'
+           - '--caps=tracing,verify'
