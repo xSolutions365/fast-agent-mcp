@@ -38,5 +38,6 @@ mcp:
            - '@playwright/mcp@latest'
            - '--output-dir=./artifacts'
            - '--headless'
+           - '--save-trace'
            - '--viewport-size=1280, 720'
            - '--caps=tracing,verify'
