@@ -40,4 +40,3 @@ mcp:
            - '--headless'
            - '--save-trace'
            - '--viewport-size=1280, 720'
-           - '--caps=tracing,verify'
