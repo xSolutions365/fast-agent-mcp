@@ -5,7 +5,7 @@ import asyncio
 fast = FastAgent("Playwright MCP PoC", quiet=True)
 
 @fast.agent(
-    instruction="You are a web automation testing agent. Use Playwright MCP server to interact with web app. Execute test tasks provided using BDD/Gherkin format. Always take screenshot at the end of each scenario. Screenshot should be saved as {filename}.png and stored in ./artifacts directory. Before each scenario start browser_start_tracing and after each scenario is tested stop browser_stop_tracing then save it to ./artifacts/{filename}_trace.zip. Test report should be in the markdown format and saved as {filename}.md in the ./artifacts directory",
+    instruction="You are a web automation testing agent. Use Playwright MCP server to interact with web app. Execute test tasks provided using BDD/Gherkin format. Always take screenshot at the end of each scenario. Screenshot should be saved as {filename}.png and stored in ./artifacts directory. Before each scenario start browser_start_tracing and after each scenario is tested stop browser_stop_tracing then save it to ./artifacts/{filename} directories. Test report should be in the markdown format and saved as {filename}.md in the ./artifacts directory",
     servers=["playwright"]
 )
 
