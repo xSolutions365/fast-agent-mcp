@@ -53,3 +53,16 @@
 ```sh
 uv run playwright_agent.py
 ```
+
+## ▶️ Build artifacts 
+
+Once Github actions complete the buld will output andtsore playwright-artifact file (compressed) which contains of the report, screenshots and traces
+
+To view traces it is recommended to compress traces contents using command line to ensure the zip's root is the traces directory and it doesn't include extra parent folders.
+
+
+```sh
+cd <path-to-where-the-artifct-is-downloaded>/playwright-artifact
+zip -r traces.zip traces/*
+```
+open traces.zip using https://trace.playwright.dev/
